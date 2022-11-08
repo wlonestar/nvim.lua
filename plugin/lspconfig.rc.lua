@@ -1,25 +1,6 @@
 local status, nvim_lsp = pcall(require, 'lspconfig')
 if (not status) then return end
 
-nvim_lsp.sumneko_lua.setup {
-  settings = {
-    Lua = {
-      runtime = {
-        version = 'LuaJIT',
-      },
-      diagnostics = {
-        globals = { 'vim' },
-      },
-      workspace = {
-        library = vim.api.nvim_get_runtime_file("", true),
-      },
-      telemetry = {
-        enable =  false
-      }
-    }
-  }
-}
-
 nvim_lsp.clangd.setup {
   cmd = { "clangd" },
   filetypes = { "c", "cpp" },

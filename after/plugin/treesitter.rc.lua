@@ -12,7 +12,9 @@ ts.setup {
   },
   ensure_installed = {
     "c", 
+    "cpp",
     "rust", 
+    "python",
     "json", 
     "markdown",
     "lua",
