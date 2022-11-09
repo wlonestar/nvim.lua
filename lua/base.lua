@@ -26,6 +26,7 @@ vim.opt.tabstop = 2
 vim.opt.ai = true -- auto indent
 vim.opt.si = true -- smart indent
 vim.opt.wrap = false -- no wrap lines
+vim.opt.colorcolumn = "80"
 vim.opt.backspace = { 'start' ,'eol', 'indent' }
 vim.opt.path:append { '**' } -- finding files - search down into subfolders
 vim.opt.wildignore:append { '*/node_modules/*' }
@@ -41,6 +42,4 @@ vim.api.nvim_create_autocmd("InsertLeave", {
 })
 
 vim.opt.formatoptions:append { 'r' }
-
-vim.cmd [[set cc=80]]
 
