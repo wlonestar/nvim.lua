@@ -4,6 +4,10 @@ if (not status) then return end
 material.setup({
   styles = {
     comments = { italic = false }
+  },
+  disable = {
+    background = false,
+    term_colors = false,
   }
 })
 

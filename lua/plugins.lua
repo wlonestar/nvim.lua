@@ -24,7 +24,8 @@ packer.startup(function(use)
     end
   }
   use 'nvim-tree/nvim-web-devicons' -- icons  
-  use 'nvim-tree/nvim-tree.lua'
+  use 'nvim-tree/nvim-tree.lua' -- file browser
+  use 'nvim-telescope/telescope.nvim'
 
   use 'windwp/nvim-autopairs'
   use 'windwp/nvim-ts-autotag'
