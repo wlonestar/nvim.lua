@@ -10,7 +10,7 @@ lualine.setup({
     disabled_filetypes = {}
   },
   sections = {
-    lualine_a = { 
+    lualine_a = {
       {
         'mode',
         symbols = {
@@ -18,7 +18,7 @@ lualine.setup({
           alternate_file = '#',
           directory =  '',
         }
-      } 
+      }
     },
     lualine_b = { 'branch' },
     lualine_c = {{
@@ -27,10 +27,10 @@ lualine.setup({
       path = 0
     }},
     lualine_x = {
-      { 
-        'diagnostics', 
-        sources = { 'nvim_diagnostic', 'coc' }, 
-        symbols = {error = 'E', warn = 'W', info = 'I', hint = 'H'}  
+      {
+        'diagnostics',
+        sources = { 'nvim_diagnostic', 'coc' },
+        symbols = {error = 'E', warn = 'W', info = 'I', hint = 'H'}
       },
       'encoding',
       'filetype'
@@ -49,7 +49,7 @@ lualine.setup({
     lualine_x = {'location'},
     lualine_y = {},
     lualine_z = {}
-  },   
+  },
   tabline = {},
   winbar = {},
   inactive_winbar = {},
