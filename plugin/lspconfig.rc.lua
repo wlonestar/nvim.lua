@@ -68,15 +68,6 @@ nvim_lsp.clangd.setup {
   on_attach = on_attach,
   cmd = { "clangd" },
   filetypes = { "c", "cpp" },
-  root_dir = root_pattern(
-    '.clangd',
-    '.clang-tidy',
-    '.clang-format',
-    'compile_commands.json',
-    'compile_flags.txt',
-    'configure.ac',
-    '.git'
-  ),
   single_file_support = { true }
 }
 
