@@ -17,6 +17,7 @@ ts.setup {
     "python",
     "json",
     "markdown",
+    "vim",
     "lua",
   },
   autotag = {
