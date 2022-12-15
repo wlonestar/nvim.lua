@@ -9,7 +9,7 @@ packer.startup(function(use)
   use 'nvim-lualine/lualine.nvim' -- statusline
   use 'nvim-lua/plenary.nvim' -- common utilities
   use 'onsails/lspkind.nvim' -- vscode-like pictograms
-  use 'hrsh7th/cmp-nvim-lsp' -- nvim-cmp source for neovim;s built-in lsp
+  use 'hrsh7th/cmp-nvim-lsp' -- nvim built-in lsp
   use 'hrsh7th/cmp-buffer' -- nvim-cmp source for buffer words
   use 'hrsh7th/cmp-cmdline'
   use 'hrsh7th/nvim-cmp' -- completion
@@ -20,7 +20,7 @@ packer.startup(function(use)
   use {
     'nvim-treesitter/nvim-treesitter',
     run = function()
-      require('nvim-treesitter.install').update({ with_sync = true})
+      require('nvim-treesitter.install').update({ with_sync = true })
     end
   }
   use 'nvim-tree/nvim-web-devicons' -- icons  
